@@ -15,7 +15,7 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(Catch2)
 
-add_executable(hello_test tests/hello_test.cpp src/hello.cpp)
-add_executable(main main.cpp src/hello.cpp)
+add_executable(binary_tree_test tests/binary_tree_test.cpp src/squirrel.cpp src/binary_tree.cpp)
+add_executable(main main.cpp src/squirrel.cpp src/binary_tree.cpp)
 
-target_link_libraries(hello_test PRIVATE Catch2::Catch2WithMain)
+target_link_libraries(binary_tree_test PRIVATE Catch2::Catch2WithMain)
